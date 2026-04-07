@@ -1529,7 +1529,7 @@ function AdminCurrentCases({currentUser,users}){
                 📤 ส่งตลาด
               </button>
             }
-          </td></tr>;})}}</tbody></table></div></div>
+          </td></tr>;})}</tbody></table></div></div>
     {sel&&<CaseModal caseData={sel} users={users} currentUser={currentUser} onClose={()=>setSel(null)} onUpdated={load} isInMarket={marketIds.has(String(sel.caseid))}/>}
     {showExport&&<div className="overlay" onClick={e=>{if(e.target===e.currentTarget)setShowExport(false);}}>
       <div className="modal" style={{maxWidth:460,borderRadius:14}}>
